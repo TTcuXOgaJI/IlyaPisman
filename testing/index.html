@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>jQuery Progress Tracker</title>
+    <link rel="stylesheet" type="text/css" href="jquery.progresstracker.css">
+    <link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="pt-section" data-name="Valera" id="ptsection-one"></div>
+    <div class="pt-section" data-name="Section Two" id="ptsection-two"></div>
+    <div class="pt-section" data-name="" id="ptsection-three"></div>
+    <div class="pt-section" data-name="Section Four, the fourth section" id="ptsection-four"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="jquery.progresstracker.js"></script>
+<script>
+    (function () {
+        $('body').progressTracker({
+            linking: true,
+            tooltip: "constant",
+            negativeTolerance: 0,
+            positiveTolerance: 0,
+            displayWhenActive: true,
+            disableBelow: 600
+        });
+    })();
+</script>
+</body>
+</html>
+
+
