@@ -1,0 +1,21 @@
+#success_message{ display: none;}
+
+.myForm{
+    background-color: white;
+}
+
+hr {
+    border-style: solid none;
+    border-width: 1px 0;
+}
+
+textarea {
+    resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

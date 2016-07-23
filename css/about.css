@@ -1,7 +1,15 @@
+.aboutContainer{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 #myProfileImage{
     border-radius: 20%;
     border: 1px solid black;
-    width: 200px;
-    height:300px;
-    margin-top: -150px;
+    width: 400px;
+    height:500px;
+}
+
+hr {
+    border-style: solid none;
+    border-width: 1px 0;
 }

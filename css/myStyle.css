@@ -45,13 +45,14 @@ a:visited, a:hover, a:active, a:link {
 .body-content {
     margin-top: 230px;
 
-    margin-bottom: 400px;
+    margin-bottom: 20px;
 }
 
 .navigationContent {
     padding: 20px;
     background-color: white;
     margin-bottom: 0px;
+    width: 100%;
 }
 
 .topContent {
@@ -67,3 +68,20 @@ a:visited, a:hover, a:active, a:link {
     background-color: black;
 }
 
+
+#endOfIndexContent{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#endOfIndexContent>hr{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#endOfIndexContent>p{
+    margin-top: 1px;
+    padding-top: 1px;
+    position: absolute; /*or fixed*/
+    right: 15px;
+}

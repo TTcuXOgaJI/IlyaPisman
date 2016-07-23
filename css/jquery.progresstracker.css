@@ -13,16 +13,16 @@
   display: none;
 }
 .progress-tracker ul li {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   position: relative;
   background-color: #ebe9ea;
   border: 1px solid #666;
   margin-bottom: 10px;
   list-style-type: none;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .progress-tracker ul li a {
   width: 100%;
