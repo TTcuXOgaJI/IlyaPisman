@@ -1,5 +1,4 @@
 <link type="text/css" rel="stylesheet" href="css/contact.css">
-
 <script src="js/contact.js"></script>
 <div class="container" id="contactInfoContainer">
 
@@ -14,7 +13,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input  name="first_name" placeholder="First Name" class="form-control"  type="text" pattern=".{3,}" required>
+                        <input id="contactFirstName"  name="first_name" placeholder="First Name" class="form-control"  type="text" pattern=".{3,}" required>
                     </div>
                 </div>
             </div>
@@ -25,7 +24,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input name="last_name" placeholder="Last Name" class="form-control"  type="text" pattern=".{3,}" required>
+                        <input id="contactLastName" name="last_name" placeholder="Last Name" class="form-control"  type="text" pattern=".{3,}" required>
                     </div>
                 </div>
             </div>
@@ -36,7 +35,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                        <input name="email" placeholder="E-Mail Address" class="form-control"  type="email" required>
+                        <input id="contactEmail" name="email" placeholder="E-Mail Address" class="form-control"  type="email" required>
                     </div>
                 </div>
             </div>
@@ -48,7 +47,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                        <input name="phone" placeholder="(845)555-1212" class="form-control" type="number" min="0" step="1" pattern=".{10,}" required>
+                        <input id="contactPhone" name="phone" placeholder="(845)555-1212" class="form-control" type="number" min="0" step="1" pattern=".{10,}" required>
                     </div>
                 </div>
             </div>
@@ -59,7 +58,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
-                        <input name="subject"  class="form-control" type="text" pattern=".{3,}" required>
+                        <input id="contactSubject" name="subject"  class="form-control" type="text" pattern=".{3,}" required>
                     </div>
                 </div>
             </div>
@@ -70,7 +69,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                        <textarea class="form-control" name="comment" placeholder="Project Description" pattern=".{10,400}" required rows="5" cols="20"></textarea>
+                        <textarea id="contactComment" class="form-control" name="comment" placeholder="Project Description" pattern=".{10,400}" required rows="5" cols="20"></textarea>
                     </div>
                 </div>
             </div>
@@ -90,3 +89,5 @@
     </form>
 </div>
 </div><!-- /.container -->
+
+
