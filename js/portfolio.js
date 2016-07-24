@@ -18,38 +18,18 @@ function scrollToID(id, speed) {
     $('html,body').animate({scrollTop: targetOffset}, 1200);
 }
 
-// $(document).on('click','.pop', function (event) {
-//     event.preventDefault();
-//     var img =$(this).find('img').attr('src');
-//     $('.imagepreview').attr('src', img);
-//     $('#imageModal').modal('show');
-// });
-
-// Get the modal
 var modal = $('#myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-// var img = $('#myImg');
 var modalImg = $("#img01");
 var captionText = $("#caption");
 
 $(document).on('click','.myImg', function (event) {
     event.preventDefault();
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-    captionText.innerHTML = this.alt;
-    // $('.imagepreview').attr('src', img);
+
+    $(modalImg).attr('src',this.src);
+    $(modalImg).attr('alt',this.alt);
+    $(captionText).html(this.alt);
     $(modal).modal('show');
 });
-
-
-// img.onclick = function(){
-//     modal.style.display = "block";
-//     modalImg.src = this.src;
-//     modalImg.alt = this.alt;
-//     captionText.innerHTML = this.alt;
-// }
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];

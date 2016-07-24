@@ -70,34 +70,8 @@ hr {
 }
 
 
-/*.modal-dialog {*/
-    /*width: 90%;*/
-    /*height: 90%;*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-/*}*/
-
-/*.modal-content {*/
-    /*height: auto;*/
-    /*min-height: 90%;*/
-    /*border-radius: 0;*/
-    /*position: fixed; !* or absolute *!*/
-    /*!*top: 50%;*!*/
-    /*!*left: 50%;*!*/
-/*}*/
-
-/*!*.centered {*!*/
-    /*!*position: fixed; !* or absolute *!*!*/
-    /*!*top: 50%;*!*/
-    /*!*left: 50%;*!*/
-/*!*}*!*/
-
-
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -112,8 +86,8 @@ hr {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    max-width: 95%;
+    max-height: 85%;
 }
 
 /* Caption of Modal Image */
@@ -124,7 +98,7 @@ hr {
     max-width: 700px;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
+    /*padding: 10px 0;*/
     height: 150px;
 }
 
@@ -145,6 +119,13 @@ hr {
     from {transform:scale(0)}
     to {transform:scale(1)}
 }
+
+.myImg{
+    cursor: pointer;
+}
+
+
+.myImg:hover {opacity: 0.5;}
 
 /* The Close Button */
 .close {
