@@ -1,7 +1,13 @@
-#success_message{ display: none;}
+#success_message {
+    display: none;
+}
 
-.myForm{
+.myForm {
     background-color: white;
+}
+
+#contactInfoContainer {
+    margin-top: 270px;
 }
 
 hr {
