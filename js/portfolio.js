@@ -27,7 +27,7 @@ $(document).on('click','.myImg', function (event) {
 
     $(modalImg).attr('src',this.src);
     $(modalImg).attr('alt',this.alt);
-    $(captionText).html(this.alt);
+    $(captionText).html(this.dataset.description);
     $(modal).modal('show');
 });
 
