@@ -10,6 +10,22 @@
     margin-bottom: 30px;
 }
 
+.carousel-control.left, .carousel-control.right{
+    background: none !important;
+    /*filter: progid:none !important;*/
+}
+
+/*.carousel-control.left:hover,*/
+/*.carousel-control.right:hover{*/
+    /*!*opacity: 0.5;*!*/
+    /*background: black;*/
+
+/*}*/
+/*TODO hover color*/
+.carousel-control:hover{
+    color: lightgray;
+}
+
 hr {
     border-style: solid none;
     border-width: 1px 0;
@@ -99,6 +115,7 @@ hr {
     margin: auto;
     display: block;
     width: 80%;
+    padding-top: 30px;
     max-width: 700px;
     text-align: center;
     color: #ccc;
@@ -135,7 +152,7 @@ hr {
 .close {
     position: absolute;
     top: 60px;
-    right: 485px;
+    right: 8.2em;
     color: white;
     font-size: 40px;
     /*font-weight: bold;*/
