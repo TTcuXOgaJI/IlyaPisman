@@ -19,6 +19,7 @@ p, .name-logo, .panelBTN {
 .BTNWrapper {
     width: 130px;
     padding-top: 3px;
+    padding-bottom: 3px;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
