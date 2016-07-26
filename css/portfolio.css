@@ -12,11 +12,13 @@
 .caption {
     font-family: almonidlAAAbold;
     direction: rtl;
+    text-align: right;
 }
 
 .projectDescription {
     font-family: almonidlAAAlight;
     direction: rtl;
+    text-align: right;
 }
 
 .img {
