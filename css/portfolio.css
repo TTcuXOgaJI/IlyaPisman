@@ -1,28 +1,57 @@
+@font-face {
+    font-family: 'almonidlAAAlight';
+    src: url('../resources/fonts/almoni/almoni-dl-aaa-light.otf')  format('opentype');
+}
+
+@font-face {
+    font-family: 'almonidlAAAbold';
+    src: url('../resources/fonts/almoni/almoni-dl-aaa-bold.otf')  format('opentype');
+}
+
+.projectLabel,
+.caption {
+    font-family: almonidlAAAbold;
+    direction: rtl;
+}
+
+.projectDescription {
+    font-family: almonidlAAAlight;
+    direction: rtl;
+}
+
 .img {
     padding: 20px;
 }
 
-.img-responsive:hover{
+.img-responsive {
+    border: 1px solid black;
+}
+
+.img-responsive:hover {
     opacity: 0.5;
+}
+
+.thumbnail {
+    border: none;
 }
 
 .thumb {
     margin-bottom: 30px;
 }
 
-.carousel-control.left, .carousel-control.right{
+.carousel-control.left, .carousel-control.right {
     background: none !important;
     /*filter: progid:none !important;*/
 }
 
 /*.carousel-control.left:hover,*/
 /*.carousel-control.right:hover{*/
-    /*!*opacity: 0.5;*!*/
-    /*background: black;*/
+/*!*opacity: 0.5;*!*/
+/*background: black;*/
 
 /*}*/
 /*TODO hover color*/
-.carousel-control:hover{
+.carousel-control:hover {
     color: lightgray;
 }
 
@@ -30,7 +59,6 @@ hr {
     border-style: solid none;
     border-width: 1px 0;
 }
-
 
 .scroll-top {
     position: absolute;
@@ -41,14 +69,15 @@ hr {
 .carousel {
     background: #2f4357;
     margin-top: 20px;
+    border: 1px solid black;
 
 }
 
-.galleryElement:nth-child(even){
+.galleryElement:nth-child(even) {
     padding-left: 0px;
 }
 
-.galleryElement:nth-child(odd){
+.galleryElement:nth-child(odd) {
     padding-right: 0px;
 }
 
@@ -58,37 +87,33 @@ hr {
     width: 100%;
 }
 
-
-.projectsGallery{
+.projectsGallery {
     margin-top: 0px;
     padding-top: 60px;
 }
 
 .glyphicon {
-    width:30%;
-    position:absolute;
-    top:45%;
+    width: 30%;
+    position: absolute;
+    top: 45%;
     font-size: 30px;
-
 
 }
 
 .glyphicon-menu-left {
     opacity: 0;
-    left:10%;
+    left: 10%;
 }
 
-.carousel-control.left:hover  .glyphicon-menu-left,
-.carousel-control.right:hover .glyphicon-menu-right
-{
+.carousel-control.left:hover .glyphicon-menu-left,
+.carousel-control.right:hover .glyphicon-menu-right {
     opacity: 1;
 }
 
 .glyphicon-menu-right {
     opacity: 0;
-    right:10%;
+    right: 10%;
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -98,8 +123,8 @@ hr {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -132,21 +157,30 @@ hr {
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
-.myImg{
+.myImg {
     cursor: pointer;
 }
 
-
-.myImg:hover {opacity: 0.5;}
+.myImg:hover {
+    opacity: 0.5;
+}
 
 /* The Close Button */
 .close {
@@ -167,10 +201,11 @@ hr {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media screen and (max-width: 1000px){
-    .close{
+@media screen and (max-width: 1000px) {
+    .close {
         right: 0.7em;
     }
+
     .modal-content {
         width: 100%;
     }

@@ -1,12 +1,38 @@
-
-p, .name-logo, .panelBTN {
-    font-family: "Helvetica";
+@font-face {
+    font-family: 'HelveticaLTStdComp';
+    src: url('../resources/fonts/helvetica/HelveticaLTStdComp.otf')  format('opentype');
 }
+@font-face {
+    font-family: 'HelveticaLTStdLight';
+    src: url('../resources/fonts/helvetica/HelveticaLTStdLight.otf')  format('opentype');
+}
+@font-face {
+    font-family: 'HelveticaLTStdLightCond';
+    src: url('../resources/fonts/helvetica/HelveticaLTStdLightCond.otf')  format('opentype');
+}
+
+
+.name-logo{
+    font-family: HelveticaLTStdComp;
+}
+
+.pagetext{
+    font-family: HelveticaLTStdLightCond;
+}
+
+.BTNWrapper{
+    font-family: HelveticaLTStdLight;
+}
+
+/*p, .name-logo, .panelBTN {*/
+    /*font-family: "Helvetica";*/
+/*}*/
 
 .name-logo {
     font-size: 75px;
     line-height: 53.9px;
-    font-weight: 100;
+    /*font-weight: 100;*/
+    color: black;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }

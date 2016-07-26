@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'HelveticaNeueLTStdUltLtCn';
+    src: url('../resources/fonts/helvetica/HelveticaNeueLTStdUltLtCn.otf')  format('opentype');
+}
+.form-group>label{
+    font-family: HelveticaNeueLTStdUltLtCn;
+}
+
 #success_message {
     display: none;
 }
