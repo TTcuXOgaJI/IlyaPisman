@@ -24,9 +24,10 @@
     font-family: HelveticaLTStdLight;
 }
 
-/*p, .name-logo, .panelBTN {*/
-    /*font-family: "Helvetica";*/
-/*}*/
+.panelBTN{
+    margin-top: 0px;
+    padding-top: 0px;
+}
 
 .name-logo {
     font-size: 75px;
@@ -38,7 +39,8 @@
 }
 
 .pagetext {
-    padding-top: 10px;
+    padding-top: 2px;
+    margin-bottom: 2px;
     font-size: 15px;
 }
 
@@ -70,7 +72,7 @@ a:visited, a:hover, a:active, a:link {
 }
 
 .body-content {
-    margin-top: 230px;
+    margin-top: 210px;
 
     margin-bottom: 20px;
 }
