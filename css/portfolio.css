@@ -46,18 +46,6 @@
 
 .carousel-control.left, .carousel-control.right {
     background: none !important;
-    /*filter: progid:none !important;*/
-}
-
-/*.carousel-control.left:hover,*/
-/*.carousel-control.right:hover{*/
-/*!*opacity: 0.5;*!*/
-/*background: black;*/
-
-/*}*/
-/*TODO hover color*/
-.carousel-control:hover {
-    color: lightgray;
 }
 
 hr {
@@ -86,6 +74,16 @@ hr {
     padding-right: 0px;
 }
 
+.carousel-indicators li {
+    background-color: #999;
+    background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+    background-color: #444;
+}
+
+
 .carousel .item img {
     margin: 0 auto; /* Align slide image horizontally center */
     height: 100%;
@@ -107,8 +105,13 @@ hr {
 
 .glyphicon-menu-left {
     opacity: 0;
-    left: 10%;
+    right: 70%;
+    border-radius: 50%;
+    background-color: rgba(110, 110, 110, 0.33);
+
 }
+
+
 
 .carousel-control.left:hover .glyphicon-menu-left,
 .carousel-control.right:hover .glyphicon-menu-right {
@@ -118,6 +121,8 @@ hr {
 .glyphicon-menu-right {
     opacity: 0;
     right: 10%;
+    border-radius: 50%;
+    background-color: rgba(110, 110, 110, 0.33);
 }
 
 /* The Modal (background) */
@@ -194,8 +199,6 @@ hr {
     right: 8.2em;
     color: white;
     font-size: 40px;
-    /*font-weight: bold;*/
-    /*transition: 0.3s;*/
 }
 
 .close:hover,
