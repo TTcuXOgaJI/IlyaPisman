@@ -1,0 +1,26 @@
+{
+  "name": "iliyapisman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "light-server": "^1.1.10"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TTcuXOgaJI/IlyaPisman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TTcuXOgaJI/IlyaPisman/issues"
+  },
+  "homepage": "https://github.com/TTcuXOgaJI/IlyaPisman#readme"
+}
