@@ -12,6 +12,9 @@
 }
 
 
+.no-margin{
+    margin: 0px;
+}
 .name-logo{
     font-family: HelveticaLTStdComp;
 }
@@ -26,7 +29,10 @@
 
 .panelBTN{
     margin-top: 0px;
-    padding-top: 0px;
+    padding-top: 0px;   
+}
+.panelBTN:active{
+    box-shadow: none;
 }
 
 .name-logo {
@@ -50,10 +56,15 @@
     padding-bottom: 3px;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    transition: background-color 0.3s ease;
 }
 
 .panelBTN:hover {
     text-decoration: none;
+}
+
+.panelBTN:hover .BTNWrapper:not(.selectedBTN){
+    background-color: rgba(0,0,0,0.1);
 }
 
 a:visited, a:hover, a:active, a:link {
@@ -97,20 +108,28 @@ a:visited, a:hover, a:active, a:link {
     background-color: black;
 }
 
+.table{
+    display: table;
+    height: 100%;
+}
+
+.table-cell{
+    display: table-cell;
+}
+
+.table-cell-vertical-center{
+    vertical-align: middle;
+}
 
 #endOfIndexContent{
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    height: 50px;
+    text-align: right;
+    border-top: 1px solid black;
 }
 
-#endOfIndexContent>hr{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
 
-#endOfIndexContent>p{
-    margin-top: 1px;
-    padding-top: 1px;
-    position: absolute; /*or fixed*/
-    right: 15px;
+#endOfIndexContent  p{
+    margin-right: 24px;
 }

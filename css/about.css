@@ -1,7 +1,6 @@
 .aboutContainer{
-    margin-left: 50px;
-    margin-right: 0px;
     /*margin-top: 263px;*/
+    height: calc(100vh - 330px);
 }
 #myProfileImage{
     /*border-radius: 20%;*/

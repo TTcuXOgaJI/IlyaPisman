@@ -114,7 +114,7 @@ hr {
     margin: 0 auto;
     /* Align slide image horizontally center */
     height: 430px;
-    width: 100%;
+    width: auto;
 }
 
 .projectsGallery {
@@ -150,17 +150,23 @@ hr {
 .glyphicon-menu-right:before,
 .glyphicon-menu-left:before{
     position: absolute;
-    top: calc((100% - 40px) / 2);
+    content: "";
+     width: 40px;
+    height: 80px;
+    background-size: cover;
+    top: calc((100% - 80px) / 2);
 }
 .glyphicon-menu-right:before{
-    right: calc((100% - 40px) / 2);
-
+    background-image: url("../resources/icons/icon-chevron-big-right.png");
+    right: 10px;
 }
 
 .glyphicon-menu-left:before{
-    left: calc((100% - 40px) / 2);
-
+    background-image: url("../resources/icons/icon-chevron-big-left.png");
+    left: 10px;
 }
+
+
 
 
 /* The Modal (background) */
@@ -176,7 +182,7 @@ hr {
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
+    /*background-color: rgba(0, 0, 0, 0.9);*/
     /* Black w/ opacity */
 }
 
@@ -239,6 +245,10 @@ hr {
 
 .myImg {
     cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 430px;
 }
 
 .myImg:hover {
@@ -275,14 +285,12 @@ hr {
 
 .slide-description {
     display: none;
-    display: block;
     font-size: 24px;
     color: white;
     margin-top: 40px;
     z-index: 100;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
+    text-overflow: ellipsis;  
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     line-height: 24px;
@@ -292,9 +300,13 @@ hr {
     height: calc(100% - 64px);
 }
 .modal-dialog .slide-description {
-    display: block;
+     display: -webkit-box;
 }
 
+.modal-dialog .myImg{
+    height: 800px;
+    max-height: calc(100vh - 156px);
+}
 
 .modal-dialog .carousel.slide {
     height: 80% !important;
@@ -303,7 +315,6 @@ hr {
 }
 
 .modal-dialog .carousel .item img {
-    width: 100%;
     height: calc(100% - 64px);
     display: block;
 }
@@ -311,6 +322,10 @@ hr {
 .modal-dialog {
     display: table;
     height: 100%;
+}
+
+.modal-dialog .btn-carousel-modal{
+    height: calc(100% - 64px);
 }
 
 .modal.modal-fullscreen .modal-content {

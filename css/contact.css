@@ -15,7 +15,7 @@
 }
 
 #contactInfoContainer {
-    margin-top: 270px;
+    height: calc(100vh - 330px);
 }
 
 hr {
